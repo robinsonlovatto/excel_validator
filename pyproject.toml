@@ -1,0 +1,2 @@
+[tool.taskipy.tasks]
+run = { cmd = 'powershell -Command "Get-NetTCPConnection -LocalPort 8501 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess | ForEach-Object {Stop-Process -Id $_ -Force}" | streamlit run src/app.py '}

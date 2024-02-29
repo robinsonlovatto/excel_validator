@@ -1,12 +1,12 @@
-# excel_validator
+# Validate Excel with Pydantic
 
 
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/robinsonlovatto/excel_validator.git
-cd excel_validator
+git clone https://github.com/robinsonlovatto/validate_excel_pydantic.git
+cd validate_excel_pydantic
 ```
 2. Configure the right version of Python with `pyenv`:
 ```bash
@@ -19,7 +19,7 @@ pyenv local 3.11.5
 python -m venv .venv
 
 # activate the virtual env (windows based)
-source .venv\Scripts\Activate
+source .venv/Scripts/Activate
 
 # install the dependencies
 pip install -r requirements.txt  
