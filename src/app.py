@@ -1,10 +1,16 @@
-import streamlit as st
+from frontend import ExcelValidatorUI
+from backend import process_excel
 
-st.set_page_config(page_title="Excel schema Validator")
 
-st.title("Upload the Excel file to be validated") #h1
+def main():
+    ui = ExcelValidatorUI()
+    ui.display_header()
 
-file = st.file_uploader("Upload your Excel file here", type=["xlsx"])
+    upload_file = ui.upload_file()
 
-if file is not None:
-    st.success("The Excel schema is correct!")
+    if upload_file:
+        result, error = process_excel(upload_file)
+        ui.display_results(result, error)
+
+if __name__ == "__main__":
+    main()

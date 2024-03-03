@@ -8,11 +8,21 @@ class CategoryEnum(str, Enum):
     category3 = "category3"
 
 class Sales(BaseModel):
+    """
+    Data model for class Sales
+    Args:
+        email (EmailStr): buyer's email
+        date (datetime): sale date
+        price (PositiveFloat): unit price of the product
+        product (str): product description
+        quantity (PositiveInt): quantity of products
+        category (CategoryEnum): product category
+    """
     email: EmailStr
     date: datetime
     price: PositiveFloat
     product: str
-    qty: PositiveInt
+    quantity: PositiveInt
     category: CategoryEnum
 
     @field_validator('category')
