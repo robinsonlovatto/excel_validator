@@ -3,6 +3,7 @@ from time import sleep
 import pytest
 import subprocess
 from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options
 import os
 
 # this decorator run for each test
@@ -11,8 +12,11 @@ def driver():
     # run streamlit in background
     process = subprocess.Popen(["streamlit", "run", "src/app.py"])
 
+    options = Options()
+    options.headless = True
+
     # define which driver is to use
-    driver = webdriver.Firefox()
+    driver = webdriver.Firefox(options=options)
 
     # define a timeout
     driver.set_page_load_timeout(5) # 5s
@@ -23,7 +27,7 @@ def driver():
     driver.quit()
     process.kill()
 
-def test_app_open(driver):
+def test_app_opens(driver):
     # check if page opens
     driver.get("http://localhost:8501")
     sleep(5)

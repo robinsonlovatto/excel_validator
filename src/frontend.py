@@ -1,7 +1,7 @@
 import streamlit as st
 
 class ExcelValidatorUI:
-    def __init(self):
+    def __init__(self):
         self.set_page_config()
 
     def set_page_config(self):

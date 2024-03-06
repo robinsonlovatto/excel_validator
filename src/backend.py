@@ -4,7 +4,7 @@ from contract import Sales
 def process_excel(uploaded_file):
     try:
         df = pd.read_excel(uploaded_file)
-
+        errors = []
         # check for extra column in excel
         extra_cols = set(df.columns) - set(Sales.model_fields.keys())
         if extra_cols:
@@ -15,11 +15,13 @@ def process_excel(uploaded_file):
             try:
                 _ = Sales(**row.to_dict())
             except Exception as e:
-                raise ValueError(f"Error in line {index + 2}: {e}")
+                errors.append(f"Error in line {index + 2}: {e}")
         
-        return True, None
+        # return validation result, errors and the dataframe
+        return True, errors
     
-    except ValueError as ve:
-        return False, str(ve)
+    #except ValueError as ve:
+    #    return False, str(ve)
+    # when error returns an empty dataframe and an error
     except Exception as e:
-        return False, f"Unexpected error: {str(e)}"
+        return pd.DataFrame(), f"Unexpected error: {str(e)}"
