@@ -10,7 +10,7 @@ def test_sale_with_valid_data():
         "date": datetime.now(),
         "price": 100.5,
         "product": "Product X",
-        "qty": 3,
+        "quantity": 3,
         "category": "category3"
     }
 
@@ -20,7 +20,7 @@ def test_sale_with_valid_data():
     assert sale.date == valid_data["date"]
     assert sale.price == valid_data["price"]
     assert sale.product == valid_data["product"]
-    assert sale.qty == valid_data["qty"]
+    assert sale.quantity == valid_data["quantity"]
     assert sale.category == valid_data["category"]
 
 def test_sale_with_invalid_data():
@@ -30,7 +30,7 @@ def test_sale_with_invalid_data():
         "date": "not date",
         "price": -100.5,
         "product": "",
-        "qty": -1,
+        "quantity": -1,
         "category": "categoria3"
     }
 
@@ -43,7 +43,7 @@ def test_validation_category():
         "date": datetime.now(),
         "price": 100.5,
         "product": "Product X",
-        "qty": 3,
+        "quantity": 3,
         "category": "non existent category"
     }
 
