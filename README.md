@@ -1,5 +1,7 @@
-# Validate Excel with Pydantic
+# Validate Excel with Pydantic then save data to DB
 
+A small project to validate data from an Excel file using Pydantic, then the data is saved in PostgreSQL database.
+The frontend is built using Streamlit and can be acessed in the link
 
 ### Installation
 
