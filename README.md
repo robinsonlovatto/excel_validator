@@ -26,3 +26,13 @@ source .venv/Scripts/Activate
 # install the dependencies
 pip install -r requirements.txt  
 ```
+
+4. Commands to run the app and the tests:
+```bash
+# run the streamlit app
+task run
+
+# run the automated tests
+task tests
+```
+
