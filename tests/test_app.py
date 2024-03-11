@@ -61,7 +61,7 @@ def test_check_user_can_upload_an_excel_and_receive_a_message(driver):
     sleep(5)
 
     # upload a file successfully
-    success_file_path = os.path.abspath("data/excel_file.xlsx")
+    success_file_path = os.path.abspath("data/valid_file.xlsx")
     driver.find_element(By.CSS_SELECTOR, 'input[type="file"]').send_keys(success_file_path)
 
     # wait for the success message
