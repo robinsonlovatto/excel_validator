@@ -9,14 +9,15 @@ class CategoryEnum(str, Enum):
 
 class Sales(BaseModel):
     """
-    Data model for class Sales
+    Data model for class Sales.
+
     Args:
-        email (EmailStr): buyer's email
-        date (datetime): sale date
-        price (PositiveFloat): unit price of the product
-        product (str): product description
-        quantity (PositiveInt): quantity of products
-        category (CategoryEnum): product category
+        email (EmailStr): Buyer's email
+        date (datetime): Sale date
+        price (PositiveFloat): Unit price of the product
+        product (str): Product description
+        quantity (PositiveInt): Quantity of products
+        category (CategoryEnum): Product category
     """
     email: EmailStr
     date: datetime

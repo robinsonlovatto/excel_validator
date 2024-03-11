@@ -1,7 +1,13 @@
-# Welcome to MkDocs
+hide:
+    - toc
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Documentation
 
-## Contract
-
+## Class Sales 
 ::: src.contract.Sales
+
+## Function process_excel
+::: src.backend.process_excel
+
+## Function excel_to_sql
+::: src.backend.excel_to_sql

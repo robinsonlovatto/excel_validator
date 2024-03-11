@@ -17,6 +17,17 @@ DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST
 
 
 def process_excel(uploaded_file):
+    """
+    Validates an Excel file and creates a Pandas DataFrame.
+
+    Args:
+        uploaded_file (UploadedFile object): The file to be processed.
+        
+    Returns:
+        Result_Set (pd.DataFrame): Returns the dataframe with the Excel data if success, or empty dataframe in case of error.
+        Result (boolean): True for success, meaning the file was validaded. False in case of unexpected error.
+        Errors ([] list ): Validation errors list. 
+    """
     try:
         df = pd.read_excel(uploaded_file)
         errors = []
@@ -42,4 +53,11 @@ def process_excel(uploaded_file):
         return pd.DataFrame(), f"Unexpected error: {str(e)}"
     
 def excel_to_sql(df):
+    """
+    Saves a Pandas Dataframe into a database table.
+
+    Args:
+        DataFrame (pd.DataFrame): The dataframe created from the Excel file.
+
+    """
     df.to_sql('sales', con=DATABASE_URL, if_exists='replace', index=False)    
