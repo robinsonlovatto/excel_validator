@@ -63,6 +63,6 @@ task tests
 <figure>
     <img src="assets/images/screen.png"
          alt="screen with a file uploader field and messages of success."
-         width="400" height="200" >
+         width="800" height="500" >
     <figcaption>Front-end made with Streamlit.</figcaption>
 </figure>
