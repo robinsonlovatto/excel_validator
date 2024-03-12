@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to MkDocs
+              Documentation
             
           </span>
         </div>
@@ -162,6 +162,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -202,7 +204,7 @@
           
   
   <span class="md-ellipsis">
-    Welcome to MkDocs
+    Documentation
   </span>
   
 
@@ -213,7 +215,7 @@
         
   
   <span class="md-ellipsis">
-    Welcome to MkDocs
+    Documentation
   </span>
   
 
@@ -235,9 +237,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#contract" class="md-nav__link">
+  <a href="#class-sales" class="md-nav__link">
     <span class="md-ellipsis">
-      Contract
+      Class Sales
     </span>
   </a>
   
@@ -247,6 +249,42 @@
   <a href="#src.contract.Sales" class="md-nav__link">
     <span class="md-ellipsis">
       Sales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-process_excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function process_excel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#src.backend.process_excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      process_excel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-excel_to_sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function excel_to_sql
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#src.backend.excel_to_sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      excel_to_sql
     </span>
   </a>
   
@@ -268,7 +306,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -287,9 +327,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#contract" class="md-nav__link">
+  <a href="#class-sales" class="md-nav__link">
     <span class="md-ellipsis">
-      Contract
+      Class Sales
     </span>
   </a>
   
@@ -299,6 +339,42 @@
   <a href="#src.contract.Sales" class="md-nav__link">
     <span class="md-ellipsis">
       Sales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-process_excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function process_excel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#src.backend.process_excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      process_excel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-excel_to_sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function excel_to_sql
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#src.backend.excel_to_sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      excel_to_sql
     </span>
   </a>
   
@@ -319,9 +395,8 @@
                   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="contract">Contract</h2>
+<h1 id="documentation">Documentation</h1>
+<h2 id="class-sales">Class Sales</h2>
 
 
 <div class="doc doc-object doc-class">
@@ -334,14 +409,107 @@
             Bases: <code><span title="pydantic.BaseModel">BaseModel</span></code></p>
 
   
-      <p>Data model for class Sales
-Args:
-    email (EmailStr): buyer's email
-    date (datetime): sale date
-    price (PositiveFloat): unit price of the product
-    product (str): product description
-    quantity (PositiveInt): quantity of products
-    category (CategoryEnum): product category</p>
+      <p>Data model for class Sales.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>email</code></td>
+          <td>
+                <code><span title="pydantic.EmailStr">EmailStr</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Buyer's email</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>date</code></td>
+          <td>
+                <code><span title="datetime.datetime">datetime</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Sale date</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>price</code></td>
+          <td>
+                <code><span title="pydantic.PositiveFloat">PositiveFloat</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Unit price of the product</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>product</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Product description</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>quantity</code></td>
+          <td>
+                <code><span title="pydantic.PositiveInt">PositiveInt</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Quantity of products</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>category</code></td>
+          <td>
+                <code><span title="src.contract.CategoryEnum">CategoryEnum</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Product category</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
 
             <details class="quote">
               <summary>Source code in <code>src\contract.py</code></summary>
@@ -365,16 +533,18 @@ Args:
 <span class="normal">27</span>
 <span class="normal">28</span>
 <span class="normal">29</span>
-<span class="normal">30</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Sales</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<span class="normal">30</span>
+<span class="normal">31</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Sales</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Data model for class Sales</span>
+<span class="sd">    Data model for class Sales.</span>
+
 <span class="sd">    Args:</span>
-<span class="sd">        email (EmailStr): buyer&#39;s email</span>
-<span class="sd">        date (datetime): sale date</span>
-<span class="sd">        price (PositiveFloat): unit price of the product</span>
-<span class="sd">        product (str): product description</span>
-<span class="sd">        quantity (PositiveInt): quantity of products</span>
-<span class="sd">        category (CategoryEnum): product category</span>
+<span class="sd">        email (EmailStr): Buyer&#39;s email</span>
+<span class="sd">        date (datetime): Sale date</span>
+<span class="sd">        price (PositiveFloat): Unit price of the product</span>
+<span class="sd">        product (str): Product description</span>
+<span class="sd">        quantity (PositiveInt): Quantity of products</span>
+<span class="sd">        category (CategoryEnum): Product category</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">email</span><span class="p">:</span> <span class="n">EmailStr</span>
     <span class="n">date</span><span class="p">:</span> <span class="n">datetime</span>
@@ -408,6 +578,236 @@ Args:
   </div>
 
 
+</div><h2 id="function-process_excel">Function process_excel</h2>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<a id="src.backend.process_excel"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Validates an Excel file and creates a Pandas DataFrame.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>uploaded_file</code></td>
+          <td>
+                <code>UploadedFile object</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The file to be processed.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>Result_Set</code></td>          <td>
+                <code><span title="pandas.DataFrame">DataFrame</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Returns the dataframe with the Excel data if success, or empty dataframe in case of error.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+<td><code>Result</code></td>          <td>
+                <code>boolean</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>True for success, meaning the file was validaded. False in case of unexpected error.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+<td><code>Errors</code></td>          <td>
+                <code>[] list </code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Validation errors list.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>src\backend.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">process_excel</span><span class="p">(</span><span class="n">uploaded_file</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Validates an Excel file and creates a Pandas DataFrame.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        uploaded_file (UploadedFile object): The file to be processed.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Result_Set (pd.DataFrame): Returns the dataframe with the Excel data if success, or empty dataframe in case of error.</span>
+<span class="sd">        Result (boolean): True for success, meaning the file was validaded. False in case of unexpected error.</span>
+<span class="sd">        Errors ([] list ): Validation errors list. </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">uploaded_file</span><span class="p">)</span>
+        <span class="n">errors</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="c1"># check for extra column in excel</span>
+        <span class="n">extra_cols</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="n">Sales</span><span class="o">.</span><span class="n">model_fields</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="k">if</span> <span class="n">extra_cols</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;Extra columns detected in the Excel: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">extra_cols</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+
+        <span class="c1"># validate each line with the schema</span>
+        <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">_</span> <span class="o">=</span> <span class="n">Sales</span><span class="p">(</span><span class="o">**</span><span class="n">row</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="n">errors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error in line </span><span class="si">{</span><span class="n">index</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1"># return validation result, errors and the dataframe</span>
+        <span class="k">return</span> <span class="n">df</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="n">errors</span>
+
+    <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">ve</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">df</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">ve</span><span class="p">)</span>
+    <span class="c1"># when error returns an empty dataframe and an error</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(),</span> <span class="sa">f</span><span class="s2">&quot;Unexpected error: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div><h2 id="function-excel_to_sql">Function excel_to_sql</h2>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<a id="src.backend.excel_to_sql"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Saves a Pandas Dataframe into a database table.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>DataFrame</code></td>
+          <td>
+                <code><span title="pandas.DataFrame">DataFrame</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The dataframe created from the Excel file.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>src\backend.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">excel_to_sql</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Saves a Pandas Dataframe into a database table.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        DataFrame (pd.DataFrame): The dataframe created from the Excel file.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="s1">&#39;sales&#39;</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">DATABASE_URL</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s1">&#39;replace&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>    
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
 </div>
 
 
@@ -416,8 +816,13 @@ Args:
 
 
 
+  
+  
 
 
+
+
+  
 
 
 
