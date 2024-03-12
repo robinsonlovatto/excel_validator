@@ -8,6 +8,7 @@ A small project to validate data from an Excel file using Pydantic, then the dat
     - Observability: module logging (Python) and Sentry    
     - Documentation: Mkdocs ([Here](https://robinsonlovatto.github.io/validate_excel_save_to_db/))   
     - Tests: Pytest   
+    - CI/CD: Github Actions    
     - Task automation: Taskipy   
 
 ### Installation
